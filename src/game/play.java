@@ -9,9 +9,9 @@ public class play {
 
     void teamSelection(){
         System.out.println("Choose the amount of overs from 1-3");
-        int decision = reader.nextInt();
+        int overCount = reader.nextInt();
 
-        if (decision == 1 || decision == 2 || decision == 3){
+        if (overCount < 1){
             
         }
 
