@@ -15,9 +15,9 @@ public class Battingproject {
         String bigshot = "Big shot";
         String driveshot = "Drive shot";
         String defenseshot = "Defense shot";
-        boolean validateshotchoice1;
-        boolean validateshotchoice2;
-        boolean validateshotchoice3;
+        // boolean validateshotchoice1;
+        // boolean validateshotchoice2;
+        // boolean validateshotchoice3;
 
         for (int i = -18; i < ballcount; i++) {
             if (wickets > 0) {
