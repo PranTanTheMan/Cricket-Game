@@ -31,7 +31,7 @@ public class play {
 
     void teamSelection() throws InterruptedException {
         System.out.println(
-                "Select a Country you want to play as: \n 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \6. USA 7. bangladesh \n 8. South Africa");
+                "Select a Country you want to play as: \n 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \n 6. USA  \n 7. bangladesh \n 8. South Africa");
         option = reader.nextInt();
 
         switch (option) {
@@ -67,7 +67,8 @@ public class play {
         System.out.println("Now that You've selected a team.");
         TimeUnit.SECONDS.sleep(1);
         System.out.println(
-                "Select a team that you want to face (other than your own): 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \6. USA 7. bangladesh \n 8. South Africa");
+                "Select a team that you want to face (other than your own): \n 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \6. USA 7. bangladesh \n 8. South Africa");
+            option2 = reader.nextInt();
         switch (option2) {
             case 1:
                 computerTeam = "India";
@@ -98,7 +99,9 @@ public class play {
                 break;
         }
         if (playerTeam.equals(computerTeam)) {
-            System.out.println("Error. You want to play against yourself?? Choose again.");
+            do{
+                System.out.println("Error. You want to play against yourself?? Choose again.");
+            option2 = reader.nextInt();
             switch (option2) {
                 case 1:
                     computerTeam = "India";
@@ -128,13 +131,14 @@ public class play {
                     computerTeam = "South Africa";
                     break;
             }
+            } while(playerTeam.equals(computerTeam));
         } else {
             System.out.println("Great Matchup!");
         }
     }
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         play obj = new play();
         obj.Overs();
+        obj.teamSelection();
     }
 }
