@@ -145,8 +145,15 @@ public class play {
             coin = 2;
         }
         //Prompts heads or tails
+        
         System.out.println("Now for the coin toss: Heads (1) or Tails (2)? ");
         choice = reader.nextInt();
+        if(choice < 1 || choice > 2){
+            do{
+                System.out.println("Error. Choose (1) Heads or (2) Tails.");
+            }while (choice < 1 || choice > 2);
+        }
+
     }
 
     public static void main(String[] args) throws InterruptedException {
