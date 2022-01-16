@@ -1,7 +1,6 @@
 package game;
 
 // import java.util.*;
-// import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +8,7 @@ public class play {
     Scanner reader = new Scanner(System.in);
     int overCount = 0;
     int option, option2 = 0;
+    int choice, coin;
     String playerTeam, computerTeam;
 
     public int Overs() {
@@ -26,7 +26,7 @@ public class play {
     }
 
     public play() {
-        int ballCount = 6 * overCount;
+        // int ballCount = 6 * overCount;
     }
 
     void teamSelection() throws InterruptedException {
@@ -68,7 +68,7 @@ public class play {
         TimeUnit.SECONDS.sleep(1);
         System.out.println(
                 "Select a team that you want to face (other than your own): \n 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \6. USA 7. bangladesh \n 8. South Africa");
-            option2 = reader.nextInt();
+        option2 = reader.nextInt();
         switch (option2) {
             case 1:
                 computerTeam = "India";
@@ -99,43 +99,56 @@ public class play {
                 break;
         }
         if (playerTeam.equals(computerTeam)) {
-            do{
+            do {
                 System.out.println("Error. You want to play against yourself?? Choose again.");
-            option2 = reader.nextInt();
-            switch (option2) {
-                case 1:
-                    computerTeam = "India";
-                    break;
-                case 2:
-                    computerTeam = "Sri Lanka";
-                    break;
-                case 3:
-                    computerTeam = "Australia";
-                    break;
-                case 4:
-                    computerTeam = "England";
-                    break;
-                case 5:
-                    computerTeam = "Pakistan";
-                    break;
-                case 6:
-                    computerTeam = "USA";
-                    break;
-                case 7:
-                    computerTeam = "New Zealand";
-                    break;
-                case 8:
-                    computerTeam = "Bangladesh";
-                    break;
-                case 9:
-                    computerTeam = "South Africa";
-                    break;
-            }
-            } while(playerTeam.equals(computerTeam));
+                option2 = reader.nextInt();
+                switch (option2) {
+                    case 1:
+                        computerTeam = "India";
+                        break;
+                    case 2:
+                        computerTeam = "Sri Lanka";
+                        break;
+                    case 3:
+                        computerTeam = "Australia";
+                        break;
+                    case 4:
+                        computerTeam = "England";
+                        break;
+                    case 5:
+                        computerTeam = "Pakistan";
+                        break;
+                    case 6:
+                        computerTeam = "USA";
+                        break;
+                    case 7:
+                        computerTeam = "New Zealand";
+                        break;
+                    case 8:
+                        computerTeam = "Bangladesh";
+                        break;
+                    case 9:
+                        computerTeam = "South Africa";
+                        break;
+                }
+            } while (playerTeam.equals(computerTeam));
         } else {
             System.out.println("Great Matchup!");
         }
     }
+
+    void coinToss() {
+        //Decides whether the coin toss was heads or tails
+        if (Math.random() < 0.5){
+            coin = 1;
+        } else {
+            coin = 2;
+        }
+        //Prompts heads or tails
+        System.out.println("Now for the coin toss: Heads (1) or Tails (2)? ");
+        choice = reader.nextInt();
+    }
+
     public static void main(String[] args) throws InterruptedException {
         play obj = new play();
         obj.Overs();
