@@ -36,17 +36,14 @@ public class Battingproject {
                         String usershotchoice = reader.next();
 
                         if (usershotchoice.equals(bigshot)) {
-
                             battingmethods.ball1shot1();
                         }
 
                         if (usershotchoice.equals(driveshot)) {
-
                             battingmethods.ball1shot2();
                         }
 
                         if (usershotchoice.equals(defenseshot)) {
-
                             battingmethods.ball1shot3();
                         }
 
@@ -60,20 +57,14 @@ public class Battingproject {
                         String usershotchoice = reader.next();
 
                         if (usershotchoice.equals(bigshot)) {
-
                             battingmethods.ball1shot1();
                         }
-
                         if (usershotchoice.equals(driveshot)) {
-
                             battingmethods.ball1shot2();
                         }
-
                         if (usershotchoice.equals(defenseshot)) {
-
                             battingmethods.ball1shot3();
                         }
-
                     }
 
                     if (balltype == 2) {
@@ -87,19 +78,14 @@ public class Battingproject {
                                     "Correct! The opposing team will bowl a short ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
                             String usershotchoice = reader.next();
 
-                            if (validateshotchoice1 = true) {
-
-                                battingmethods1.ball2shot1();
+                            if (usershotchoice.equals(bigshot)) {
+                                battingmethods.ball1shot1();
                             }
-
-                            if (validateshotchoice2 = true) {
-
-                                battingmethods2.ball2shot2();
+                            if (usershotchoice.equals(driveshot)) {
+                                battingmethods.ball1shot2();
                             }
-
-                            if (validateshotchoice3 = true) {
-
-                                battingmethods3.ball2shot3();
+                            if (usershotchoice.equals(defenseshot)) {
+                                battingmethods.ball1shot3();
                             }
 
                         }
@@ -112,21 +98,15 @@ public class Battingproject {
                                 "Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
                         String usershotchoice = reader.next();
 
-                        if (validateshotchoice1 = true) {
-
-                            battingmethods1.ball1shot1();
+                        if (usershotchoice.equals(bigshot)) {
+                            battingmethods.ball1shot1();
                         }
-
-                        if (validateshotchoice2 = true) {
-
-                            battingmethods2.ball1shot2();
+                        if (usershotchoice.equals(driveshot)) {
+                            battingmethods.ball1shot2();
                         }
-
-                        if (validateshotchoice3 = true) {
-
-                            battingmethods3.ball1shot3();
+                        if (usershotchoice.equals(defenseshot)) {
+                            battingmethods.ball1shot3();
                         }
-
                     }
 
                     if (balltype == 3) {
@@ -140,19 +120,14 @@ public class Battingproject {
                                     "Correct! The opposing team will bowl a good ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
                             String usershotchoice = reader.next();
 
-                            if (validateshotchoice1 = true) {
-
-                                battingmethods1.ball3shot1();
+                            if (usershotchoice.equals(bigshot)) {
+                                battingmethods.ball1shot1();
                             }
-
-                            if (validateshotchoice2 = true) {
-
-                                battingmethods2.ball3shot2();
+                            if (usershotchoice.equals(driveshot)) {
+                                battingmethods.ball1shot2();
                             }
-
-                            if (validateshotchoice3 = true) {
-
-                                battingmethods3.ball3shot3();
+                            if (usershotchoice.equals(defenseshot)) {
+                                battingmethods.ball1shot3();
                             }
 
                         }
@@ -165,19 +140,14 @@ public class Battingproject {
                                 "Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
                         String usershotchoice = reader.next();
 
-                        if (validateshotchoice1 = true) {
-
-                            battingmethods1.ball3shot1();
+                        if (usershotchoice.equals(bigshot)) {
+                            battingmethods.ball1shot1();
                         }
-
-                        if (validateshotchoice2 = true) {
-
-                            battingmethods2.ball3shot2();
+                        if (usershotchoice.equals(driveshot)) {
+                            battingmethods.ball1shot2();
                         }
-
-                        if (validateshotchoice3 = true) {
-
-                            battingmethods3.ball3shot3();
+                        if (usershotchoice.equals(defenseshot)) {
+                            battingmethods.ball1shot3();
                         }
 
                     }
@@ -193,19 +163,14 @@ public class Battingproject {
                                     "Correct! The opposing team will bowl a perfect ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
                             String usershotchoice = reader.next();
 
-                            if (validateshotchoice1 = true) {
-
-                                battingmethods1.ball4shot1();
+                            if (usershotchoice.equals(bigshot)) {
+                                battingmethods.ball1shot1();
                             }
-
-                            if (validateshotchoice2 = true) {
-
-                                battingmethods2.ball4shot2();
+                            if (usershotchoice.equals(driveshot)) {
+                                battingmethods.ball1shot2();
                             }
-
-                            if (validateshotchoice3 = true) {
-
-                                battingmethods3.ball4shot3();
+                            if (usershotchoice.equals(defenseshot)) {
+                                battingmethods.ball1shot3();
                             }
 
                         }
@@ -217,19 +182,14 @@ public class Battingproject {
                         System.out.println(
                                 "Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
                         String usershotchoice = reader.next();
-                        if (validateshotchoice1 = true) {
-
-                            battingmethods1.ball4shot1();
+                        if (usershotchoice.equals(bigshot)) {
+                            battingmethods.ball1shot1();
                         }
-
-                        if (validateshotchoice2 = true) {
-
-                            battingmethods2.ball4shot2();
+                        if (usershotchoice.equals(driveshot)) {
+                            battingmethods.ball1shot2();
                         }
-
-                        if (validateshotchoice3 = true) {
-
-                            battingmethods3.ball4shot3();
+                        if (usershotchoice.equals(defenseshot)) {
+                            battingmethods.ball1shot3();
                         }
 
                     }
