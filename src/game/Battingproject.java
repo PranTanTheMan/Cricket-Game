@@ -206,5 +206,6 @@ public class Battingproject {
                     + " wickets lost. Take a quick break and get ready for the second half of the game!");
 
         }
+        reader.close();
     }
 }
