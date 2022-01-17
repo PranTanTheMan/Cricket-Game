@@ -4,13 +4,15 @@ package game;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import javax.lang.model.type.DeclaredType;
+
 public class play {
     Scanner reader = new Scanner(System.in);
     int overCount = 0;
     int option, option2 = 0;
-    int choice, coin;
+    int choice, coin, decision;
     String playerTeam, computerTeam;
-    boolean playerBowlm, playerBat;
+    boolean playerBowl, playerBat;
 
     public int Overs() {
         System.out.println("Choose the amount of overs from 1-3.");
@@ -155,7 +157,9 @@ public class play {
             }while (choice < 1 || choice > 2);
         }
         if (choice == coin){
-            System.out.println("Will you like to Bat or Bowl?");
+            System.out.println("Will you like to Bat (1) or Bowl (2) ?");
+            decision = reader.nextInt();
+            if ()
 
         }
 
