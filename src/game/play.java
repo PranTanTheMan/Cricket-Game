@@ -171,7 +171,6 @@ public class play {
 
     public static void main(String[] args) throws InterruptedException {
         play obj = new play();
-        obj.Overs();
-        obj.teamSelection();
+        obj.coinToss();
     }
 }
