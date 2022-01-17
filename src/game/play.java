@@ -153,6 +153,9 @@ public class play {
                 System.out.println("Error. Choose (1) Heads or (2) Tails.");
             }while (choice < 1 || choice > 2);
         }
+        if (choice == coin){
+            System.out.println("Will you like to Bat or Bowl?")
+        }
 
     }
 
