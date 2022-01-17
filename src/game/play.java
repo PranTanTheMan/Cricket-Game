@@ -10,6 +10,7 @@ public class play {
     int option, option2 = 0;
     int choice, coin;
     String playerTeam, computerTeam;
+    boolean playerBowlm, playerBat;
 
     public int Overs() {
         System.out.println("Choose the amount of overs from 1-3.");
@@ -155,7 +156,7 @@ public class play {
         }
         if (choice == coin){
             System.out.println("Will you like to Bat or Bowl?");
-            
+
         }
 
     }
