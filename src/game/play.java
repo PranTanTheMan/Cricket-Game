@@ -4,8 +4,6 @@ package game;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-import javax.lang.model.type.DeclaredType;
-
 public class play {
     Scanner reader = new Scanner(System.in);
     int overCount = 0;
@@ -168,9 +166,7 @@ public class play {
                     }
                 } while (decision < 1 || decision > 2);
             }
-
         }
-
     }
 
     public static void main(String[] args) throws InterruptedException {
