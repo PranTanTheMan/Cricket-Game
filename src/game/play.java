@@ -141,28 +141,32 @@ public class play {
     }
 
     void coinToss() {
-        //Decides whether the coin toss was heads or tails
-        if (Math.random() < 0.5){
+        // Decides whether the coin toss was heads or tails
+        if (Math.random() < 0.5) {
             coin = 1;
         } else {
             coin = 2;
         }
-        //Prompts heads or tails
-        
+        // Prompts heads or tails
+
         System.out.println("Now for the coin toss: Heads (1) or Tails (2)? ");
         choice = reader.nextInt();
-        if(choice < 1 || choice > 2){
-            do{
+        if (choice < 1 || choice > 2) {
+            do {
                 System.out.println("Error. Choose (1) Heads or (2) Tails.");
-            }while (choice < 1 || choice > 2);
+            } while (choice < 1 || choice > 2);
         }
-        if (choice == coin){
+        if (choice == coin) {
             System.out.println("Will you like to Bat (1) or Bowl (2) ?");
             decision = reader.nextInt();
-            if (decision == 1){
-                playerBat = true;
-            } else if(decision == 2){
-                playerBowl = true;
+            if (decision < 1 || decision > 2) {
+                do {
+                    if (decision == 1) {
+                        playerBat = true;
+                    } else if (decision == 2) {
+                        playerBowl = true;
+                    }
+                } while (decision < 1 || decision > 2);
             }
 
         }
