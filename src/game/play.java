@@ -12,7 +12,7 @@ public class play {
     int option, option2 = 0;
     int choice, coin, decision;
     String playerTeam, computerTeam;
-    boolean playerBowl, playerBat;
+    boolean playerBowl, playerBat = false;
 
     public int Overs() {
         System.out.println("Choose the amount of overs from 1-3.");
@@ -159,7 +159,11 @@ public class play {
         if (choice == coin){
             System.out.println("Will you like to Bat (1) or Bowl (2) ?");
             decision = reader.nextInt();
-            if ()
+            if (decision == 1){
+                playerBat = true;
+            } else if(decision == 2){
+                playerBowl = true;
+            }
 
         }
 
