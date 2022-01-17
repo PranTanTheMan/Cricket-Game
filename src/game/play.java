@@ -154,7 +154,8 @@ public class play {
             }while (choice < 1 || choice > 2);
         }
         if (choice == coin){
-            System.out.println("Will you like to Bat or Bowl?")
+            System.out.println("Will you like to Bat or Bowl?");
+            
         }
 
     }
