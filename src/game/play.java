@@ -26,10 +26,6 @@ public class play {
         return overCount;
     }
 
-    public play() {
-        // int ballCount = 6 * overCount;
-    }
-
     void teamSelection() throws InterruptedException {
         System.out.println(
                 "Select a Country you want to play as: \n 1. India \n 2. Sri Lanka \n 3. Australia \n 4. England \n 5. Pakistan \n 6. USA  \n 7. bangladesh \n 8. South Africa");
