@@ -1,6 +1,6 @@
 package game;
 
-// import java.util.*;
+import java.util.*;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -159,6 +159,7 @@ public class play {
             System.out.println("Will you like to Bat (1) or Bowl (2) ?");
             decision = reader.nextInt();
             if (decision < 1 || decision > 2) {
+                System.out.println("Error. Would You like to (1) Bat or (2) Bowl");
                 do {
                     if (decision == 1) {
                         playerBat = true;
@@ -171,6 +172,6 @@ public class play {
     }
     public static void main(String[] args) throws InterruptedException {
         play obj = new play();
-        obj.coinToss();
+        //Something in here.
     }
 }
