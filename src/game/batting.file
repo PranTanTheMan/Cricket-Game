@@ -1,0 +1,788 @@
+import java.util.*;
+
+		public class ProjectPJStuff {
+			public static void main(String[] args) { 
+				
+			Scanner reader = new Scanner(System.in);
+			int ballcount = 18; //whatever the user enters
+			int wickets = 10;
+			int yourscore = 0;
+			String bigshot = "Big shot";
+			String driveshot = "Drive shot";
+			String defenseshot = "Defense shot";
+			
+			for (int i=0; i<ballcount; i++) {
+			if (wickets > 0) {
+				Random random1 = new Random();
+				int balltype = random1.nextInt(4) + 1;
+				if (balltype == 1) { 
+					int trivia1 = random1.nextInt(21);
+					int trivia2 = random1.nextInt(21); 
+					
+							System.out.println("Answer the following: what is " + trivia1 + " times " + trivia2 + "?");
+							int useranswerfortrivia = reader.nextInt();
+							if (useranswerfortrivia == trivia1*trivia2); {
+								System.out.println("Correct! The opposing team will bowl a full ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
+								String usershotchoice = reader.next(); 
+								boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+								boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+								boolean validateshotchoice3 = usershotchoice.equals(defenseshot);}}
+							
+						
+							else {
+								System.out.println("Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
+								String usershotchoice = reader.next(); 
+									boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+									boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+									boolean validateshotchoice3 = usershotchoice.equals(defenseshot);
+										if (validateshotchoice1 = true) {
+											int wicketchancecalculator = random1.nextInt(10) + 1;
+												if (wicketchancecalculator == 1); {
+													wickets=wickets-1;
+													ballcount = ballcount + 1;
+													System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+												}}
+												else {
+													int runsadded = random1.nextInt(7);
+														switch (runsadded) {
+															case 0: 
+														
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 1: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 2: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 3: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+															case 4:
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 5: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 6: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+												}
+												}
+												
+									
+										
+										if (validateshotchoice2 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(20) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+											}}
+											
+											else {
+												int runsadded = random1.nextInt(5);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													}}
+											
+										
+																					
+										
+										if (validateshotchoice3 = true) {
+											
+											
+												int runsadded = random1.nextInt(2);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+													}}
+											
+										}
+				
+			
+				if (balltype == 2) { 
+					int trivia1 = random1.nextInt(21);
+					int trivia2 = random1.nextInt(21); 
+					
+							System.out.println("Answer the following: what is " + trivia1 + " times " + trivia2 + "?");
+							int useranswerfortrivia = reader.nextInt();
+							if (useranswerfortrivia == trivia1*trivia2); {
+								System.out.println("Correct! The opposing team will bowl a short ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
+								String usershotchoice = reader.next(); 
+								boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+								boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+								boolean validateshotchoice3 = usershotchoice.equals(defenseshot);}}
+							
+						
+							else {
+								System.out.println("Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
+								String usershotchoice = reader.next(); 
+									boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+									boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+									boolean validateshotchoice3 = usershotchoice.equals(defenseshot);
+										if (validateshotchoice1 = true) {
+											int wicketchancecalculator = random1.nextInt(10) + 1;
+												if (wicketchancecalculator == 1); {
+													wickets=wickets-1;
+													ballcount = ballcount + 1;
+													System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+												}}
+												else {
+													int runsadded = random1.nextInt(7);
+														switch (runsadded) {
+															case 0: 
+														
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 1: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 2: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 3: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+															case 4:
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 5: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 6: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+												}
+												}
+												
+									
+										
+										if (validateshotchoice2 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(20) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+											}}
+											
+											else {
+												int runsadded = random1.nextInt(5);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													}
+											}
+										
+																					
+										
+										if (validateshotchoice3 = true) {
+											
+											
+												int runsadded = random1.nextInt(2);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+													}}
+											
+										}
+				
+				if (balltype == 3) { 
+					int trivia1 = random1.nextInt(21);
+					int trivia2 = random1.nextInt(21); 
+					
+							System.out.println("Answer the following: what is " + trivia1 + " times " + trivia2 + "?");
+							int useranswerfortrivia = reader.nextInt();
+							if (useranswerfortrivia == trivia1*trivia2); {
+								System.out.println("Correct! The opposing team will bowl a good ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
+								String usershotchoice = reader.next(); 
+								boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+								boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+								boolean validateshotchoice3 = usershotchoice.equals(defenseshot);}}
+							
+						
+							else {
+								System.out.println("Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
+								String usershotchoice = reader.next(); 
+									boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+									boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+									boolean validateshotchoice3 = usershotchoice.equals(defenseshot);
+										if (validateshotchoice1 = true) {
+											int wicketchancecalculator = random1.nextInt(5) + 1;
+												if (wicketchancecalculator == 1); {
+													wickets=wickets-1;
+													ballcount = ballcount + 1;
+													System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+												}}
+												else {
+													int runsadded = random1.nextInt(7);
+														switch (runsadded) {
+															case 0: 
+														
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 1: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 2: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 3: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+															case 4:
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 5: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 6: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+												}
+												}
+												
+									
+										
+										if (validateshotchoice2 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(10) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+											}}
+											
+											else {
+												int runsadded = random1.nextInt(5);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													}}
+											
+										
+																					
+										
+										if (validateshotchoice3 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(20) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");}}
+											
+											else {
+												int runsadded = random1.nextInt(2);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+													}
+											
+										}}
+				
+				if (balltype == 4) { 
+					int trivia1 = random1.nextInt(21);
+					int trivia2 = random1.nextInt(21); 
+					
+							System.out.println("Answer the following: what is " + trivia1 + " times " + trivia2 + "?");
+							int useranswerfortrivia = reader.nextInt();
+							if (useranswerfortrivia == trivia1*trivia2); {
+								System.out.println("Correct! The opposing team will bowl a perfect ball. What shot type do you want to play against it? Big shot, drive shot, or defense shot?");
+								String usershotchoice = reader.next(); 
+								boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+								boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+								boolean validateshotchoice3 = usershotchoice.equals(defenseshot);}}
+							
+						
+							else {
+								System.out.println("Incorrect! We cannot reveal the ball type that the opposing team will bowl. What shot type do you want to play? Big shot, Drive shot, or Defense shot? Type it in exactly as printed.");
+								String usershotchoice = reader.next(); 
+									boolean validateshotchoice1 = usershotchoice.equals(bigshot);
+									boolean validateshotchoice2 = usershotchoice.equals(driveshot);
+									boolean validateshotchoice3 = usershotchoice.equals(defenseshot);
+										if (validateshotchoice1 = true) {
+											int wicketchancecalculator = random1.nextInt(2) + 1;
+												if (wicketchancecalculator == 1); {
+													wickets=wickets-1;
+													ballcount = ballcount + 1;
+													System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+												}}
+												else {
+													int runsadded = random1.nextInt(7);
+														switch (runsadded) {
+															case 0: 
+														
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 1: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 2: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+															case 3: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+															case 4:
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 5: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+																
+															case 6: 
+																
+																yourscore = runsadded + yourscore;
+																ballcount = ballcount + 1;
+																System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+												}
+												}
+												
+									
+										
+										if (validateshotchoice2 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(5) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+											}}
+											
+											else {
+												int runsadded = random1.nextInt(5);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													}}
+											
+										
+																					
+										
+										if (validateshotchoice3 = true) {
+											
+											int wicketchancecalculator = random1.nextInt(10) + 1;
+											if (wicketchancecalculator == 1); {
+												wickets=wickets-1;
+												ballcount = ballcount + 1;
+												System.out.println("You are out! The next batter is on their way in. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");}}
+											
+											else {
+												int runsadded = random1.nextInt(2);
+													switch (runsadded) {
+														case 0: 
+													
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Not bad, dot ball (No runs). Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 1: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Well played, 1 run. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 2: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Nicely played, 2 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+														
+														case 3: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Good shot, 3 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+													
+														case 4:
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Great shot! Boundary, 4 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 5: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("Wow! 5 runs. Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+															
+														case 6: 
+															
+															yourscore = runsadded + yourscore;
+															ballcount = ballcount + 1;
+															System.out.println("WHAT A SHOT! 6 runs, into the crowd! Your new score is: " + yourscore + " runs, " + wickets + " wickets down, " + ballcount + " balls elapsed.");
+
+													}}
+											
+										}}
+				
+			
+			
+			else {
+				System.out.println("Your team is all out! Innings over!");
+			}
+				
+			}
+			
+			System.out.println("Your final innings score is: " + yourscore + " runs, " + wickets + " wickets lost. Take a quick break and get ready for the second half of the game!");
+			
+			}}
+	
+
+
